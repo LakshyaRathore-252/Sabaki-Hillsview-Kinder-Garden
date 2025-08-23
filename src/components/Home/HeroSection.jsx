@@ -14,7 +14,14 @@ const HeroSection = () => {
                 <Typography sx={{ fontSize: { xs: '2rem', md: '3rem', lg: '40px' }, fontWeight: '900', textAlign: "start" }}>Nurturing Young Minds, Building Bright Futures</Typography>
                 <Typography sx={{ letterSpacing: "1px", display: "flex", flexWrap: "wrap", textAlign: "start" }} >At Sabaki Hillsview
                     Kinder Garten, we provide a stimulating and supportive environment where children can learn, grow, and thrive. Our holistic approach focuses on developing essential skills through play-based learning, fostering creativity, curiosity, and a lifelong love of learning.</Typography>
-                <Button fullWidth sx={{ marginTop: { xs: "1rem", md: "1rem", lg: "2rem" }, padding: "1rem 2rem", backgroundColor: theme.palette.primary.btnHover, color: theme.palette.primary.contrastText, "&:hover": { backgroundColor: theme.palette.primary.btnColor } }}>
+                <Button fullWidth
+                    sx={{
+                        marginTop: { xs: "1rem", md: "1rem", lg: "2rem" },
+                        padding: "1rem 2rem",
+                        backgroundColor: theme.palette.primary.Mbtn,
+                        color: theme.palette.primary.contrastText,
+                        "&:hover": { backgroundColor: theme.palette.primary.btnHover }
+                    }}>
                     Explore Our Programs
                 </Button>
             </Box>

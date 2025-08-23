@@ -20,7 +20,7 @@ export default function ThemeSelector({ themeName, onThemeChange }) {
     dark: "#90caf9",
     green: "#2e7d32",
     red: "#d32f2f",
-    yellow: "#f57c00",
+    yellow: "#ffeb3b",
   };
 
   return (

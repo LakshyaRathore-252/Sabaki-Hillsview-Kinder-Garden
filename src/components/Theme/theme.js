@@ -27,12 +27,14 @@ export const themeConfigs = {
       mode: 'light',
       primary: {
         main: '#f8f9fc',
+        Mbtn: "#607afb",
         contrastText: '#000',
         btnColor: "#e6e9f4",
-        btnHover: "#607afb",
+        btnHover: "#435ed5ff",
       },
       secondary: {
         main: '#607afb',
+        cardborder: "#344d65"
       },
       background: {
         default: '#f8f9fc',
@@ -46,11 +48,14 @@ export const themeConfigs = {
       primary: {
         main: '#90caf9',
         contrastText: '#fff',
+        Mbtn: "#566bc9ff",
         btnColor: "#21284a",
-        btnHover: "#566bc9ff",
+        btnHover: "#435ed5ff",
       },
       secondary: {
         main: '#f48fb1',
+        cardTextcolor: "#93adc8",
+        cardborder: "#344d65",
       },
       background: {
         default: '#121212',
@@ -64,11 +69,15 @@ export const themeConfigs = {
       primary: {
         main: '#221d11',
         contrastText: '#fff',
+        Mbtn: "#c79516ff",
         btnColor: "#473d22",
-        btnHover: "#6f5f32ff",
+        btnHover: "#d6aa3bff",
       },
       secondary: {
         main: '#F4C753',
+        cardTextcolor: "#b8a983",
+        cardborder: "#5c4e2c",
+        cardbg: "#342c19",
       },
       background: {
         default: '#221d11',
@@ -82,11 +91,15 @@ export const themeConfigs = {
       primary: {
         main: '#221112',
         contrastText: '#fff',
+        Mbtn: "#d32f2f",
         btnColor: "#472426",
-        btnHover: "#5d2e30ff",
+        btnHover: "#d83e3eff",
       },
       secondary: {
         main: '#ea2832',
+        cardbg: "#331a1b",
+        cardTextcolor: "#c08b8e",
+        cardborder: "#5d2e31",
       },
       background: {
         default: '#221112',
@@ -99,12 +112,16 @@ export const themeConfigs = {
       mode: 'light', // Keep as 'light' or 'dark'
       primary: {
         main: '#10231c',
+        Mbtn: "#019863",
         contrastText: '#fff',
         btnColor: "#214a3c",
-        btnHover: "#2d715bff",
+        btnHover: "#1daf7cff",
       },
       secondary: {
         main: '#019863',
+        cardbg: "#17352b",
+        cardTextcolor: "#8ecdb7",
+        cardborder: "#2d6652",
 
       },
       background: {
