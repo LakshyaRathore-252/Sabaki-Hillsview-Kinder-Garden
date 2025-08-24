@@ -5,21 +5,23 @@ import { Box, ThemeProvider } from '@mui/material'
 import createAppTheme from './components/Theme/theme'
 import { CssBaseline } from '@mui/material'
 import { useState } from 'react'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   // Default theme name
-  const [themeName, setThemeName] = useState( localStorage.getItem("appTheme") || "dark");
+  const [themeName, setThemeName] = useState(localStorage.getItem("appTheme") || "dark");
 
   // Create theme from selected themeName
   const theme = createAppTheme(themeName);
 
   return (
-    <ThemeProvider theme={theme}> {/* Fixed: pass the theme instance, not the function */}
+    <ThemeProvider theme={theme}> 
       <CssBaseline />
       <Navbar onThemeChange={setThemeName} themeName={themeName} />
       <Box padding={{ sm: 1.5, md: 2, lg: 4 }}>
         <Home />
       </Box>
+      <Footer />
     </ThemeProvider>
   )
 }

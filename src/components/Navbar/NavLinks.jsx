@@ -3,7 +3,7 @@ import React from "react";
 
 const links = ["Home", "About us", "Contact us"];
 
-const NavLinks = () => {
+const NavLinks = ({ pos = 'end', bold = '500' }) => {
   const theme = useTheme();
   return (
     <Box
@@ -14,7 +14,7 @@ const NavLinks = () => {
         display: { xs: "none", md: "flex" },
         gap: { xs: "1.5rem", md: "2rem" },
         flex: 1,
-        justifyContent: "end",
+        justifyContent: pos,
         cursor: "pointer",
         alignItems: "center",
       }}
@@ -26,7 +26,7 @@ const NavLinks = () => {
           href={`#${item.toLowerCase().replace(" ", "-")}`}
           sx={{
             fontSize: "15px",
-            fontWeight: "500",
+            fontWeight: bold,
             textDecoration: "none",
             color: "inherit",
             fontFamily: "inherit",
