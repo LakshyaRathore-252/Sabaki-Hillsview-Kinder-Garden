@@ -1,9 +1,11 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import SchoolIcon from "@mui/icons-material/School";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Logo = () => {
   const theme = useTheme();
+  const navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -13,6 +15,7 @@ const Logo = () => {
         flex: 1,
         cursor: "pointer",
       }}
+      onClick={() => navigate("/")}
     >
       <SchoolIcon sx={{ color: theme.palette.primary.contrastText }} />
       <Typography

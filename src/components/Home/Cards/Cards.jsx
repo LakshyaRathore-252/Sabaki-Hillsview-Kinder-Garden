@@ -35,7 +35,7 @@ const Cards = () => {
         <Box
             sx={{
                 display: "flex",
-                mt: 5,
+                mt: 3,
                 flexWrap: "wrap",
                 justifyContent: "center",
                 alignItems: "center",

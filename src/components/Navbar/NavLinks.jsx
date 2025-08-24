@@ -1,7 +1,13 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
-const links = ["Home", "About us", "Contact us"];
+const links = [
+  { to: "/", text: "Home" },
+  { to: "/about", text: "About us" },
+  { to: "/gallery", text: "Gallery" },
+  { to: "/contact", text: "Contact us" },
+];
 
 const NavLinks = ({ pos = 'end', bold = '500' }) => {
   const theme = useTheme();
@@ -22,20 +28,21 @@ const NavLinks = ({ pos = 'end', bold = '500' }) => {
       {links.map((item, index) => (
         <Typography
           key={index}
-          component="a"
-          href={`#${item.toLowerCase().replace(" ", "-")}`}
+          component={Link}
+          to={item.to}
           sx={{
             fontSize: "15px",
             fontWeight: bold,
             textDecoration: "none",
-            color: "inherit",
+            color: theme.palette.primary.contrastText,
             fontFamily: "inherit",
             "&:hover": { color: theme.palette.primary.btnHover },
           }}
         >
-          {item}
+          {item.text}
         </Typography>
       ))}
+
     </Box>
   );
 };

@@ -9,7 +9,6 @@ import ThemeSelector from "../Navbar/ThemeSelector";
 
 const Navbar = ({ onThemeChange, themeName }) => {
     const theme = useTheme();
-    console.log(theme)
     return (
         <>
             <Box

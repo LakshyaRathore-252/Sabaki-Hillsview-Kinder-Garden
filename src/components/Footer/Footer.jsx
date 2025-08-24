@@ -10,7 +10,7 @@ const Footer = () => {
             <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "1rem 0" }}>
                 <NavLinks pos='center' bold='400' />
                 <Typography variant="body2" sx={{ color: theme.palette.secondary.cardTextcolor , marginTop: "0.8rem", fontSize: "0.8rem" }}>
-                    © 2023 Kinder Garden School. All rights reserved.
+                    © 2025 Kinder Garden School. All rights reserved.
                 </Typography>
             </Box>
 

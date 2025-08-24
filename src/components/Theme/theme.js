@@ -26,7 +26,7 @@ export const themeConfigs = {
     palette: {
       mode: 'light',
       primary: {
-        main: '#f8f9fc',
+        main: '#111a22',
         Mbtn: "#607afb",
         contrastText: '#000',
         btnColor: "#e6e9f4",
