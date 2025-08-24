@@ -15,6 +15,11 @@ export default function ThemeSelector({ themeName, onThemeChange }) {
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.down("sm"));
 
+  const handleThemeChange = (e) => {
+    onThemeChange(e.target.value)
+    localStorage.setItem("appTheme", e.target.value);
+  }
+
   const swatch = {
     light: "#1976d2",
     dark: "#90caf9",
@@ -47,7 +52,7 @@ export default function ThemeSelector({ themeName, onThemeChange }) {
       <Select
         labelId="theme-select-label"
         value={themeName}
-        onChange={(e) => onThemeChange(e.target.value)}
+        onChange={handleThemeChange} 
         displayEmpty={isXs}
         sx={{
           borderRadius: "12px",

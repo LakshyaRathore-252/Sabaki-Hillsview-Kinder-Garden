@@ -34,11 +34,18 @@ export const themeConfigs = {
       },
       secondary: {
         main: '#607afb',
-        cardborder: "#344d65"
+        cardborder: "#344d65",
+        barHover: "#7a3b3b",
+        barColor: "#e6edf4",
+        barHover: "#9bcdfeff",
+        barBorder: "#4574a1",
+        chartboxborder: "#314960",
       },
       background: {
         default: '#f8f9fc',
         paper: '#f8f9fc',
+        tooltipbar: "#fcfafaff",
+        tooltipbarshadow: "rgba(255, 255, 255, 1)",
       },
     },
   },
@@ -51,11 +58,18 @@ export const themeConfigs = {
         Mbtn: "#566bc9ff",
         btnColor: "#21284a",
         btnHover: "#435ed5ff",
+
       },
       secondary: {
         main: '#f48fb1',
         cardTextcolor: "#93adc8",
         cardborder: "#344d65",
+        barHover: "#7a3b3b",
+        barColor: "#243647",
+        barHover: "#20609cff",
+        barBorder: "#93adc8",
+        chartboxborder: "#314960",
+
       },
       background: {
         default: '#121212',
@@ -78,10 +92,17 @@ export const themeConfigs = {
         cardTextcolor: "#b8a983",
         cardborder: "#5c4e2c",
         cardbg: "#342c19",
+        barColor: "#483e23",
+        barHover: "#765b12ff",
+        barBorder: "#caba91",
+        chartboxborder: "#675832",
+
       },
       background: {
         default: '#221d11',
         paper: '#221d11',
+        tooltipbar: "#1f1f1f",
+        tooltipbarshadow: "rgba(0, 0, 0, 0.4)",
       },
     },
   },
@@ -100,10 +121,18 @@ export const themeConfigs = {
         cardbg: "#331a1b",
         cardTextcolor: "#c08b8e",
         cardborder: "#5d2e31",
+        barColor: "#472426",
+        barHover: "#7a3b3b",
+        barBorder: "#c89295",
+        chartboxborder: "#582c2f",
+
       },
       background: {
         default: '#221112',
         paper: '#221112',
+        tooltipbar: "#1f1f1f",
+        tooltipbarshadow: "rgba(0, 0, 0, 0.4)",
+
       },
     },
   },
@@ -122,11 +151,18 @@ export const themeConfigs = {
         cardbg: "#17352b",
         cardTextcolor: "#8ecdb7",
         cardborder: "#2d6652",
+        barColor: "#214a3c",
+        barHover: "#248766ff",
+        barBorder: "#8ecdb7",
+        chartboxborder: "#275947",
+
 
       },
       background: {
         default: '#10231c',
         paper: '#10231c',
+        tooltipbar: "#1f1f1f",
+        tooltipbarshadow: "rgba(0, 0, 0, 0.4)",
       },
     },
   },

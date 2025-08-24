@@ -66,7 +66,9 @@ const Home = () => {
         </Typography>
       </Box>
 
-      <Chart />
+      <Box sx={{ marginTop: "2.5rem" }}>
+        <Chart />
+      </Box>
 
 
     </Container>

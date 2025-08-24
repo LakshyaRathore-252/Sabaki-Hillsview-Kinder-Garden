@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 const App = () => {
   // Default theme name
-  const [themeName, setThemeName] = useState("dark");
+  const [themeName, setThemeName] = useState( localStorage.getItem("appTheme") || "dark");
 
   // Create theme from selected themeName
   const theme = createAppTheme(themeName);
