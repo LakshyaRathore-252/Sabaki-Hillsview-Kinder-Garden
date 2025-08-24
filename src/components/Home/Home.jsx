@@ -3,6 +3,7 @@ import React from 'react'
 import HeroSection from './HeroSection';
 import Cards from './Cards/Cards';
 import Chart from './chart/chart';
+import UpdateSection from './Updates/UpdateSection';
 
 const Home = () => {
   const theme = useTheme();
@@ -68,6 +69,21 @@ const Home = () => {
 
       <Box sx={{ marginTop: "2.5rem" }}>
         <Chart />
+      </Box>
+
+      <Box sx={{ marginTop: "2.5rem" }}>
+        <Typography
+          sx={{
+            fontFamily: "inherit",
+            color: theme.palette.primary.contrastText,
+            width: "100%",
+            textAlign: "justify",
+            fontWeight: "500",
+            fontSize: { xs: "1.5rem", md: "1.5rem", lg: "1.5rem" },
+          }}>
+          News & Updates
+        </Typography>
+        <UpdateSection />
       </Box>
 
 
