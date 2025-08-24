@@ -15,10 +15,15 @@ const Card = ({ title, desc, icon }) => {
             boxShadow: 3,
             gap: 1,
             borderRadius: 2,
-            width: { xs: '350px', sm: '350px', md: '350px' },
-            height: { xs: '200px', sm: '200px', md: '200px' },
+            maxWidth: "350px",
+            minHeight: "200px",
             backgroundColor: theme.palette.secondary.cardbg,
-            border: `1px solid ${theme.palette.secondary.cardborder}`
+            border: `1px solid ${theme.palette.secondary.cardborder}`,
+            "&:hover": {
+                boxShadow: `0 2px 6px ${theme.palette.primary.btnHover}`,
+                transform: "translateY(-2px)",
+
+            },
         }}>
             <Typography sx={{ marginTop: '0.5rem', fontFamily: 'inherit', fontSize: '1rem', color: theme.palette.primary.contrastText }} >
                 {icon}
