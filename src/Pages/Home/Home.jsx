@@ -1,13 +1,11 @@
-import { Box, Button, Container, Divider, Typography, useTheme } from '@mui/material'
-import React from 'react'
-import HeroSection from '../../components/Home/HeroSection';
+import { Box, Container, Typography, useTheme } from '@mui/material';
 import Cards from '../../components/Home/Cards/Cards';
-import Chart from '../../components/Home/chart/chart';
-import UpdateSection from '../../components/Home/Updates/UpdateSection';
+import Chart from '../../components/Home/chart/Chart';
 import ContactForm from '../../components/Home/Contact/ContactForm';
-import Footer from '../../components/Footer/Footer';
-import WhyChoose from '../../components/Home/WhyChoose';
+import HeroSection from '../../components/Home/HeroSection';
+import UpdateSection from '../../components/Home/Updates/UpdateSection';
 import VisionMission from '../../components/Home/VisionMission';
+import WhyChoose from '../../components/Home/WhyChoose';
 
 const Home = () => {
   const theme = useTheme();
