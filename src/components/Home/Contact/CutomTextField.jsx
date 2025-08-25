@@ -8,7 +8,7 @@ const CustomTextField = ({ placeholder, multiline = false, name }) => {
     const [field, meta] = useField(name); // connect with Formik
 
     return (
-        <Box sx={{ display: "flex", flexDirection: "column", mt: "1.5rem" }}>
+        <Box sx={{ display: "flex", flexDirection: "column", mt: "1.5rem"  , width:"100%" , maxWidth:"480px"}}>
             <label
                 style={{
                     color: theme.palette.primary.contrastText,

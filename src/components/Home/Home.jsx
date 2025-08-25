@@ -94,7 +94,9 @@ const Home = () => {
         </Box>
 
         {/* Contact Us Form */}
-        <Box sx={{ marginTop: "2.5rem", }}>
+        <Box sx={{
+          marginTop: "2.5rem",
+        }}>
           <ContactForm />
         </Box>
 
