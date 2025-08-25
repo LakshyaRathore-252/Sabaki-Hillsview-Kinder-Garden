@@ -4,7 +4,7 @@ import CustomTextField from "./CutomTextField"; // Your custom wrapper
 import { Formik, Form } from "formik";
 import { initialValues, validationSchema } from "../../../constant/constant";
 
-const ContactForm = () => {
+const ContactForm = ({ Border = "" }) => {
     const theme = useTheme();
 
     return (
@@ -17,10 +17,16 @@ const ContactForm = () => {
             }}
         >
             {({ handleSubmit }) => (
-                <Form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit} style={{
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  
+                }}>
                     <Typography
                         variant="h6"
-                        sx={{ color: theme.palette.primary.contrastText, mb: 2 }}
+                        sx={{ color: theme.palette.primary.contrastText, mb: 2, mt: 2 }}
                     >
                         Contact Us
                     </Typography>
@@ -43,6 +49,12 @@ const ContactForm = () => {
                             backgroundColor: `${theme.palette.primary.Mbtn}`,
                             color: `${theme.palette.primary.contrastText}`,
                             textTransform: "none",
+                            padding: "0.75rem 1.5rem",
+                            mb: 2,
+                            borderRadius: "4px",
+                            "&:hover": {
+                                backgroundColor: `${theme.palette.primary.btnHover}`,
+                            }
                         }}
                     >
                         Send Message
